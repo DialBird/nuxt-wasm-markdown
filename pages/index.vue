@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import init, { pulldown_cmark } from '@/hello-wasm/pkg/hello_wasm.js'
+import init, { pulldown_cmark } from '@/@markdown-wasm/hello_wasm'
 import { useState } from 'nuxt/app'
 
 definePageMeta({ layout: 'custom' })
