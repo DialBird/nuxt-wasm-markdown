@@ -8,9 +8,18 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.0.3",
-    "nuxt": "3.0.0-rc.1"
+    "import-sort-style-module": "^6.0.0",
+    "nuxt": "3.0.0-rc.1",
+    "prettier": "^2.6.2",
+    "prettier-plugin-import-sort": "^0.0.7"
   },
   "dependencies": {
     "daisyui": "^2.14.2"
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx, .vue": {
+      "style": "module",
+      "parser": "typescript"
+    }
   }
 }
