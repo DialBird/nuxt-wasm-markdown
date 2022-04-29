@@ -1,5 +1,5 @@
 <template>
   <div>
-    <p class="bg-red-200">comeon</p>
+    <button class="btn">Hello daisyUI</button>
   </div>
 </template>
