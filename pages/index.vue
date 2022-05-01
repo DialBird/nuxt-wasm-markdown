@@ -1,17 +1,24 @@
 <script lang="ts" setup>
-import init, { pulldown_cmark } from '@/@markdown-wasm/hello_wasm'
-import { useState } from 'nuxt/app'
+import init, { pulldown_cmark } from '@/modules/markdown-wasm'
+// import great, { ok } from '@dialbird/hoge'
 
 definePageMeta({ layout: 'custom' })
 
 // WASM
 const isWasmLoading = useState('isWasmLoading', () => false)
-init().then(() => (isWasmLoading.value = true))
+// console.log('yatta,', ok, great());
+
+init().then(() => {
+  console.log('finished')
+  isWasmLoading.value = true
+})
 
 const textValue = useState<string>('textValue')
 
 const convertedHTML = computed<string>(() => {
   if (!isWasmLoading.value) return ''
+  console.log('comonin');
+  
   return pulldown_cmark(textValue.value)
 })
 </script>

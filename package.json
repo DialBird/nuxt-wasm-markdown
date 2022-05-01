@@ -5,7 +5,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "pack": "wasm-pack build hello-wasm -d ../@markdown-wasm --target web"
+    "pack": "wasm-pack build hello-wasm -d ../modules/markdown-wasm --target web"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.0.3",
